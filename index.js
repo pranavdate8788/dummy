@@ -23,7 +23,7 @@ function updateFeed(paylaod) {
       (todo) =>
         ` <div class="task-box">
         <div class="task-heading">
-          <p>${todo?.title}</p>
+          <h3>${todo?.title}</h3>
           <div class="date">${new Date(todo?.date).toLocaleString("en-us", {
             day: "2-digit",
             month: "short",
