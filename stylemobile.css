@@ -1,0 +1,234 @@
+body{
+    /* background: red; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+  }
+  .main-container {
+    /* background: #a61616; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+  }
+  .left-container {
+    background: #101010;
+    width: calc(100% - 38%);
+    height: 100vh;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    overflow: auto;
+    border-radius: 1rem;
+  }
+  .left-contchild {
+    height: 200px;
+    width: 57%;
+    /* background: #0fd263; */
+    overflow: hidden;
+    position: fixed;
+    /* padding: 1rem; */
+  }
+  .status {
+    padding: 0.3rem;
+    background: rgb(233, 181, 77);
+    width: 50%;
+    /* height: 100px; */
+    /* color: aliceblue; */
+    margin-left: auto;
+    font-size: 10px;
+    border-radius: .5rem;
+    margin-bottom: .8rem;
+  }
+  .display {
+    background: #262626;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    height: 100px;
+    display: flex;
+    width: 95%;
+    /* padding: 1rem; */
+    margin: auto;
+    color: whitesmoke;
+    border-radius: 1rem;
+    border-width:1px;
+  border-style:solid;
+  border-color:#ffff;
+  
+  }
+
+  .to-do {
+    height: 50px;
+    width: 50px;
+    padding: 0.15rem;
+    border-radius: 100%;
+    background: rgb(224, 42, 10);
+  }
+  .child {
+    height: 45px;
+    width: 45px;
+    font-size: 15px;
+    border: none;
+    color: aliceblue;
+    border-radius: 100%;
+    background: #252525;
+  }
+  .progress {
+    height: 50px;
+    width: 50px;
+    padding: 0.15rem;
+    border-radius: 100%;
+    background: rgb(224, 113, 10);
+  }
+  .complete {
+    height: 50px;
+    width: 50px;
+    padding: 0.15rem;
+    border-radius: 100%;
+    background: rgb(53, 224, 10);
+  }
+  span {
+    display: inline-block;
+    margin: 0.09rem 0.00001rem;
+    font-size: 10px;
+    /* background: red; */
+  }
+  .task-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 200px);
+    margin-top: 200px;
+    /* background: #a31515; */
+    overflow-y: auto;
+    padding: .5rem;
+  }
+  .task-box {
+    width: 95%;
+    height: 145px;
+    margin: auto;
+    padding: 0.3rem;
+    background: 	#aaeed2;
+    display: flex;
+    /* color: #fff; */
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+  .task-heading {
+    display: flex;
+    font-size: 15px;
+    padding: .5rem;
+    /* background: royalblue; */
+    justify-content: space-between;
+  }
+  .date {
+    height: 35px;
+    width: 95px;
+    background: rgb(30, 200, 195);
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+    font-size: 14px;
+  }
+  .task-content {
+    margin: .5rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+  }
+  .check-box {
+    display: flex;
+    margin: 0.2rem .5rem ;
+    gap: 0.4rem;
+    font-size: 12px;
+  }
+  .button {
+    height: 27px;
+    width: 80px;
+    /* background: rgb(44, 61, 43); */
+    padding: 0.4rem;
+    border-radius: 1rem;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      font-size: 11.8px;
+      /* border-radius: 10px; */
+  }
+  .right-container {
+    background: #252525;
+    border-radius: 1rem;
+    /* position: sticky; */
+    width: 36.5%;
+    /* height: 100vh; */
+    color: aliceblue;
+    /* margin: auto; */
+  }
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .profile {
+    height: 60px;
+    width: 60px;
+    padding: 0.2rem;
+    border-radius: 100%;
+    background: rgb(205, 9, 189);
+    font-size: 1rem;
+    color: aliceblue;
+  }
+  .para{
+    font-size: 10px;
+  }
+  .H3{
+    font-size: 15px;
+  }
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: .5rem .5rem;
+  }
+  input {
+    border-radius: .7rem;
+    padding: 0.2rem;
+    height: 30px;
+  }
+  .text-area {
+    border-radius: .7rem;
+    padding: 0.3rem;
+    height: 150px;
+  }
+  #date{
+    height: 30px;
+  }
+  .footer-utility {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+  }
+  .select {
+    font-size: 11px;
+    width: 58%;
+    border-radius: .7rem;
+    padding: 0.2rem;
+  }
+  .Create-task {
+    border-radius: 1rem;
+    padding: 0.3rem;
+    background: violet;
+    color: #ffff;
+    font-size: 15px;
+  }
+  

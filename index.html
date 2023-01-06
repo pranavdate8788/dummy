@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="./stylemobile.css">
   </head>
   <body>
     <div class="main-container">
@@ -35,11 +36,11 @@
         <div class="profile-header">
           <button class="profile">P</button>
           <span>Pranav Date</span>
-          <p>This is my To-Do app</p>
+          <p class="para">This is my To-Do app</p>
         </div>
         <form class="to-form">
           <div class="input-field">
-            <h3>Create a task : </h3>
+            <h3 class="H3">Create a task : </h3>
             <input name="title" type="text" placeholder="Enter title" />
             <textarea
             placeholder="write in detail about task"
@@ -47,7 +48,7 @@
               class="text-area"
               cols="30"
               rows="10"></textarea>
-            <input type="date" name="date" id="" />
+            <input type="date" name="date" id="date" />
             <div class="footer-utility">
               <select name="status" class="select">
                 <option value="In Progres">In Progress</option>
