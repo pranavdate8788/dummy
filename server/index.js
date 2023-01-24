@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: ["http://127.0.0.1:5500/", "http://127.0.0.1:5500"],
+    origin: ["https://light-moth-wetsuit.cyclic.app/","http://127.0.0.1:5500/", "http://127.0.0.1:5500"],
     credentials :true
   })
 );
