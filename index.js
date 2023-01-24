@@ -60,7 +60,7 @@ form.onsubmit = async (e) => {
   for (let key of data.keys()) {
     paylaod[key] = data.get(key);
   }
-  const req = await fetch("http://localhost:6789/api/v1/todo/create", {
+  const req = await fetch("https://light-moth-wetsuit.cyclic.app/api/v1/todo/create", {
     method: "post",
     body: JSON.stringify(paylaod),
     headers: {
@@ -76,7 +76,7 @@ form.onsubmit = async (e) => {
 // complete todos
 async function markComplete(id) {
   console.log(id);
-  const req = await fetch("http://localhost:6789/api/v1/todo/update", {
+  const req = await fetch("https://light-moth-wetsuit.cyclic.app/api/v1/todo/update", {
     method: "post",
     body: JSON.stringify({ _id: id, status: "Completed" }),
     mode : "cors",
@@ -93,7 +93,7 @@ async function markComplete(id) {
 // complete todos
 async function markINProgress(id) {
   console.log(id);
-  const req = await fetch("http://localhost:6789/api/v1/todo/update", {
+  const req = await fetch("https://light-moth-wetsuit.cyclic.app/api/v1/todo/update", {
     method: "post",
     body: JSON.stringify({ _id: id, status: "In Progres" }),
     mode : "cors",
@@ -108,7 +108,7 @@ async function markINProgress(id) {
 }
 //  updating dom with todos
 (async () => {
-  const req = await fetch("http://localhost:6789/api/v1/todo/get", {
+  const req = await fetch("https://light-moth-wetsuit.cyclic.app/api/v1/todo/get", {
     method: "get",
     mode : "cors",
     headers: {
